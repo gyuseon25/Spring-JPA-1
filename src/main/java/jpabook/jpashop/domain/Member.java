@@ -11,7 +11,7 @@ import java.util.List;
 @Getter @Setter
 public class Member {
 
-    @Id @GeneratedValue
+    @Id @GeneratedValue //em.persist할 때 키가 pk에 값을 그대로 넣음 , 동시에 여기 값도 채워줌 아직 db에 들어간 시점 아니여도
     @Column(name = "member_id")
     private Long id;
 
